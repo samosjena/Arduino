@@ -1,0 +1,21 @@
+void setup()
+{
+  pinMode(3, OUTPUT); //asettaa pinnin output pinniksi
+  pinMode(4, OUTPUT); //asettaa pinnin output pinniksi
+  pinMode(5, OUTPUT); //asettaa pinnin output pinniksi
+}
+
+void loop()
+{
+  digitalWrite(3, HIGH);
+  delay(300); // Valo palaa annetun ajan sekunteina
+  digitalWrite(3, LOW); // Valo sammuu
+  
+  digitalWrite(4, HIGH);
+  delay(300); // Valo palaa annetun ajan sekunteina
+  digitalWrite(4, LOW); // Valo sammuu
+  
+  digitalWrite(5, HIGH);
+  delay(300); // Valo palaa annetun ajan sekunteina
+  digitalWrite(5, LOW); // Valo sammuu
+}
