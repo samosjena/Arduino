@@ -1,0 +1,26 @@
+int valo1 = 3;
+int valo2 = 4;
+int valo3 = 5;
+int nappi = 2;
+int napinTila = 0;
+
+void setup() {
+  pinMode(valo1, OUTPUT); //asettaa pinnin OUTPUT-pinniksi
+  pinMode(valo2, OUTPUT); //asettaa pinnin OUTPUT-pinniksi
+  pinMode(valo3, OUTPUT); //asettaa pinnin OUTPUT-pinniksi
+  pinMode(napinTila, INPUT); //napin pinnin INPUT-pinniksi
+}
+
+void loop() {
+  napinTila = digitalRead(nappi);
+  if((napinTila) == HIGH){
+   	digitalWrite(valo1, HIGH);
+    digitalWrite(valo2, HIGH);
+    digitalWrite(valo3, HIGH);
+  }
+  else {
+  	digitalWrite(valo1, LOW);
+    digitalWrite(valo2, LOW);
+    digitalWrite(valo3, LOW);
+  }
+}
